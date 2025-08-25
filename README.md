@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:
+## Date: 25-08-2025
 
 ## AIM:
 To develop a simple webserver to serve html pages and display the list of protocols in TCP/IP Protocol Suite.
@@ -36,9 +36,49 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
-
+```
+DEVELOPED BY: JAGANNIVASH U M
+REG NO: 212224240059
+```
+```py
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TCP/IP Layers and Protocols</title>
+    
+        
+</head>
+<body>
+    <h2>TCP/IP Layers and Protocols</h2>
+    <table border="1">
+        <tr>
+            <th>TCP/IP Layers</th>
+            <th>Protocols (Examples)</th>
+        </tr>
+        <tr>
+            <td>Application Layer</td>
+            <td>HTTP, RDP, DNS, SMTP, Telnet, SNMP</td>
+        </tr>
+        <tr>
+            <td>Transport Layer</td>
+            <td>TCP, UDP</td>
+        </tr>
+        <tr>
+            <td>Internet Layer</td>
+            <td>ICMP, IGMP, ARP, IP, IPSec</td>
+        </tr>
+        <tr>
+            <td>Network Access Layer</td>
+            <td>Ethernet (IEEE 802.3), Token Ring, PPP, Frame Relay</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
 
 ## OUTPUT:
+<img width="1918" height="1199" alt="Screenshot 2025-08-25 090646" src="https://github.com/user-attachments/assets/1e8de732-d1a3-4dde-a1b4-fe2ebf017a97" />
+<img width="1919" height="1199" alt="Screenshot 2025-08-25 090658" src="https://github.com/user-attachments/assets/41ea895c-de49-4f6a-8380-31b7c107eca9" />
 
 
 ## RESULT:
