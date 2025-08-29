@@ -77,9 +77,7 @@ REG NO: 212224240059
 ```
 
 ## OUTPUT:
-<img width="1918" height="1199" alt="Screenshot 2025-08-25 090646" src="https://github.com/user-attachments/assets/1e8de732-d1a3-4dde-a1b4-fe2ebf017a97" />
-<img width="1919" height="1199" alt="Screenshot 2025-08-25 090658" src="https://github.com/user-attachments/assets/41ea895c-de49-4f6a-8380-31b7c107eca9" />
-
+![alt text](<Screenshot 2025-08-29 093138.png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
