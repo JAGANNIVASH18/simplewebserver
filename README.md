@@ -74,6 +74,20 @@ REG NO: 212224240059
     </table>
 </body>
 </html>
+
+
+class MyServer(BaseHTTPRequestHandler):
+    def do_GET(self):
+        print("GET request received...")
+        self.send_response(200)
+        self.send_header("Content-type", "text/html")
+        self.end_headers()
+        self.wfile.write(content.encode("utf-8"))
+
+print("This is my webserver, running at http://localhost:5000/")
+server_address = ('', 5000)
+httpd = HTTPServer(server_address, MyServer)
+httpd.serve_forever()
 ```
 
 ## OUTPUT:
