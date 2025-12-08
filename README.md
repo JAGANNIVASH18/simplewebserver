@@ -41,52 +41,58 @@ DEVELOPED BY: JAGANNIVASH U M
 REG NO: 212224240059
 ```
 ```py
-<!DOCTYPE html>
+from http.server import HTTPServer,BaseHTTPRequestHandler
+content='''
+<!doctype html>
 <html>
 <head>
-    <title>TCP/IP Layers and Protocols</title>
-    
-        
+    <title>My Web Server</title>
 </head>
 <body>
-    <h2>TCP/IP Layers and Protocols</h2>
-    <table border="1">
+    <center><h1>List of Protocol in TCP/IP Protocol Suite</h1></center>
+    <table border="1" align="center" cellpadding="10" bgcolor="lightgreen">
         <tr>
-            <th>TCP/IP Layers</th>
-            <th>Protocols (Examples)</th>
+            <th>S.NO.</th>
+            <th>Name of the Layer</th>
+            <th>Name of the Protocol</th>
         </tr>
         <tr>
+            <td>1.</td> 
             <td>Application Layer</td>
-            <td>HTTP, RDP, DNS, SMTP, Telnet, SNMP</td>
+            <td>HTTP, FTP, DNS, Telnet</td>
         </tr>
         <tr>
+            <td>2.</td>
             <td>Transport Layer</td>
-            <td>TCP, UDP</td>
+            <td>TCP & UDP</td>
+            
         </tr>
         <tr>
-            <td>Internet Layer</td>
-            <td>ICMP, IGMP, ARP, IP, IPSec</td>
+            <td>3.</td>
+            <td>Network Layer</td>
+            <td>IPV4/IPV6</td>
         </tr>
         <tr>
-            <td>Network Access Layer</td>
-            <td>Ethernet (IEEE 802.3), Token Ring, PPP, Frame Relay</td>
+            <td>4.</td>
+            <td>Link Layer</td>
+            <td>Ethernet</td>
         </tr>
     </table>
 </body>
 </html>
-
-
-class MyServer(BaseHTTPRequestHandler):
+'''
+class Myserver(BaseHTTPRequestHandler):
     def do_GET(self):
-        print("GET request received...")
+        print("Get request received...")
         self.send_response(200)
-        self.send_header("Content-type", "text/html")
+        self.send_header("content-type","text/html")
         self.end_headers()
-        self.wfile.write(content.encode("utf-8"))
+        self.wfile.write(content.encode())
 
-print("This is my webserver, running at http://localhost:5000/")
-server_address = ('', 5000)
-httpd = HTTPServer(server_address, MyServer)
+print("This is my webserver")
+
+server_address=('',8000)
+httpd=HTTPServer(server_address,Myserver)
 httpd.serve_forever()
 ```
 
